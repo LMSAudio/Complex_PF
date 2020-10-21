@@ -11,4 +11,4 @@ Here you will find five different examples produced using the synthetic test dat
 > https://github.com/microsoft/AEC-Challenge
 
 #### Example 1
-[<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="20%">](https://www.lms.tf.fau.de/files/2020/10/echo_fileid_9978.wav)(Unprocessed microphone signal )
+[<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="10%">](https://www.lms.tf.fau.de/files/2020/10/echo_fileid_9978.wav Unprocessed microphone signal) 
