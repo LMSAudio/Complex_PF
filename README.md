@@ -2,7 +2,7 @@
 
 In this repository you will find examplary results from our ICASSP-submitted paper *Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation*. 
 
-In addition, once our contribution is accepted, we are committed to uploading our implementation such that our results can be reprocuded by interested readers. 
+In addition, once our contribution is accepted, we are committed to uploading our implementation such that our results can be reproduced by interested readers. 
 
 
 ### Audio examples 
