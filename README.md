@@ -11,4 +11,5 @@ Here you will find five different examples produced using the synthetic test dat
 > https://github.com/microsoft/AEC-Challenge
 
 #### Example 1
-[<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="10%">](https://www.lms.tf.fau.de/files/2020/10/echo_fileid_9978.wav Unprocessed microphone signal) 
+Unprocessed microphone signal       Residual signal after linear adaptive filter  Real-valued Postfilter   Complex-valued Postfilter 
+![<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="10%">](https://github.com/LMSAudio/Complex_PF/blob/main/examples/example1_mic.wav) ![<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="10%">](https://github.com/LMSAudio/Complex_PF/blob/main/examples/example1_linearFilter.wav) ![<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="10%">](https://github.com/LMSAudio/Complex_PF/blob/main/examples/example1_realPF.wav) ![<img src="https://i.pinimg.com/originals/9c/6c/0d/9c6c0dbafebc090d4e28cd53cb23fe3a.jpg" width="10%">](https://github.com/LMSAudio/Complex_PF/blob/main/examples/example1_complexPF.wav) 
