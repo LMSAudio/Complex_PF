@@ -10,6 +10,9 @@ In addition, once our contribution is accepted, we are committed to uploading ou
 Here you will find five different examples produced using the synthetic test dataset provided as part of the ICASSP 2021 AEC Challenge:
 > https://github.com/microsoft/AEC-Challenge
 
+You can download the individual audio examples by pressing on the respective download button below or by using *left click* then *save link as*. 
+Alternatively, you can download all examples at once by cloning the entire repository from *Code* then *Download ZIP*.
+
 #### Example 1
  Unprocessed microphone signal | Residual signal after linear adaptive filter | Real-valued Postfilter | Complex-valued Postfilter 
  ----------------------------- | -------------------------------------------- | ---------------------- | ------------------------- 
