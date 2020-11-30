@@ -12,7 +12,7 @@ Here you will find five different examples produced using the synthetic test dat
 
 #### Instructions
 You can download individual audio examples by clicking on the respective download button or using *left click* then *save link as*. 
-Alternatively, you can download all examples at once by cloning the entire repository from *Code* then *Download ZIP*, or by clicking [here](https://github.com/LMSAudio/Complex_PF/archive/main.zip).
+Alternatively, you can download all examples at once by cloning the entire repository by clicking [here](https://github.com/LMSAudio/Complex_PF/archive/main.zip).
 
 #### Example 1
  Unprocessed microphone signal | Residual signal after linear adaptive filter | Real-valued Postfilter | Complex-valued Postfilter 
