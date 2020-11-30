@@ -11,7 +11,7 @@ Here you will find five different examples produced using the synthetic test dat
 > https://github.com/microsoft/AEC-Challenge
 
 #### Instructions
-You can download the individual audio examples by pressing on the respective download button below or by using *left click* then *save link as*. 
+You can download individual audio examples by pressing on the respective download button or by using *left click* then *save link as*. 
 Alternatively, you can download all examples at once by cloning the entire repository from *Code* then *Download ZIP*, or using this link:
 > https://github.com/LMSAudio/Complex_PF/archive/main.zip
 
