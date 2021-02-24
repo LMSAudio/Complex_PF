@@ -11,7 +11,7 @@ The implementaiton builds on other source codes for *"Phase-Aware Speech Enhance
 3. To run the code using the provided *dummy* datasets, simply excute the file [./git_train.py], which should perform training, validation and testing based on the provided datasets
 4. To run the algorithm on other datasets and/or using different parameterizaiton, e.g., different number of layers, you can use the file [./git_config.py] which contains most of the implementation parameters
 
-### Understanding the implementation
+### Implementation structure
 We have used several files to separate the different parts of the implementation: 
 1. git_config: includes most the configurations and provides easy access to many of the parameters 
 2. git_init: initializes the different objects, e.g., the dataloaders and the network
