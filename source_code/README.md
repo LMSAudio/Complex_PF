@@ -7,7 +7,7 @@ The implementaiton builds on other source codes for *"Phase-Aware Speech Enhance
 
 #### How to use
 1. Make sure all dependencies are installed. You can find the used packages in the file [./git_config.py]
-2. The provided *dummy* datasets [./data/] include: far-end, residual and near-end signals. These files are compressed and therefore, you should de-compress the them before proceeding
+2. The provided *dummy* datasets [./data/] include: far-end, residual and near-end signals. These files are compressed and therefore, you should de-compress them before proceeding
 3. To run the code using the provided *dummy* datasets, simply excute the file [./git_train.py], which should perform training, validation and testing based on the provided datasets
 4. To run the algorithm on other datasets and/or using different parameterizaiton, e.g., different number of layers, you can use the file [./git_config.py] which contains most of the implementation parameters
 
