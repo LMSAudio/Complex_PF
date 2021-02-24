@@ -13,10 +13,10 @@ The implementaiton builds on other source codes for *"Phase-Aware Speech Enhance
 
 ### Implementation structure
 We have used several files to separate the different parts of the implementation: 
-1. git_config: includes most the configurations and provides easy access to many of the parameters 
+1. git_config: includes most of the configuration options and provides easy access to many of the parameters 
 2. git_init: initializes the different objects, e.g., the dataloaders and the network
 3. git_train: performs the actual training, validation and testing using the specified datasets 
-4. The folder [./model/] includes the classes related to the proposed complex-valued deep postfilter
+4. The folder [./model/] includes the classes related to the complex-valued deep postfilter model
 5. The folder [./datasets/] includes the data-related classes 
 6. The folder [./helpers/] includes utility functions, e.g., the loss function
 
