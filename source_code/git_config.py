@@ -49,14 +49,14 @@ netcfg['nrFrames']      = 2
 memoryLength       = 20         # effectively, the length of the context window as provided to the GRU
 
 trainingDataset_h5pyname = 'train.hdf5'
-trainingDataset_matPath= '/home/halimeh/misc/AEC_Challenge/MATLAB/icassp_sps_challenge/data/aecDatabase/testData/dt_-5dB_static_rir/'
+trainingDataset_matPath= 'trainingMatFilesPath'
 inputFrameSize = 2
 
 testDataset_h5pyname = 'test.hdf5'
-testDataset_matPath= '/home/halimeh/misc/AEC_Challenge/MATLAB/icassp_sps_challenge/data/aecDatabase/testData/dt_-5dB_static_rir/'
+testDataset_matPath= 'TestMatFilesPath'
 
 valDataset_h5pyname = 'val.hdf5'
-valDataset_matPath= '/home/halimeh/misc/AEC_Challenge/MATLAB/icassp_sps_challenge/data/aecDatabase/testData/dt_-5dB_static_rir/'
+valDataset_matPath= 'ValidationMatFilesPath'
 #######################################################################################################################
 
 
