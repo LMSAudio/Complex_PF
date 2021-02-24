@@ -3,7 +3,7 @@
 
 Here you can find an implementation of our proposed complex-valued deep postfilter. 
 
-The implementaiton builds on other implementations of *Phase-Aware Speech Enhancement with Deep Complex U-Net, H. Choi, et al.* and *Deep Complex Neural Networks, C. Trabelsi*. These implementations can be found [here][link: https://github.com/chanil1218/DCUnet.pytorch] and [here][link: https://github.com/ChihebTrabelsi/deep_complex_networks/tree/pytorch]. 
+The implementaiton builds on other implementations of *Phase-Aware Speech Enhancement with Deep Complex U-Net, H. Choi, et al.* and *Deep Complex Neural Networks, C. Trabelsi*. These implementations can be found [here](link: https://github.com/chanil1218/DCUnet.pytorch) and [here](link: https://github.com/ChihebTrabelsi/deep_complex_networks/tree/pytorch). 
 
 #### How to use: 
 1. Make sure all dependencies are installed. You can find the used packages in the file [./git_config.py]
