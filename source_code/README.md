@@ -24,6 +24,7 @@ We have used several files to separate the different parts of the implementation
 Please cite our work as
 
 >@INPROCEEDINGS{,
+>
 >  title={Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation},
 >  
 >  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
