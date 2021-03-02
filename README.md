@@ -60,3 +60,16 @@ Please cite our work as
 
 #### Plain Text
 > M. M. Halimeh, T. Haubner, A. Briegleb, A. Schmidt, and W. Kellermann, "Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation," 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Toronto, Canada, June, 2021.
+
+#### RIS 
+>TY  - CONF
+>TI  - Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation
+>T2  - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+>AU  - M. M. Halimeh
+>AU  - T. Haubner
+>AU  - A. Briegleb
+>AU  - A. Schmidt
+>AU  - W. Kellermann
+>PY  - 2021
+>JO  - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+>Y1  - June 2021
