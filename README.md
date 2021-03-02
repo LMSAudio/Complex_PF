@@ -4,22 +4,6 @@ In this repository you will find exemplary results from our ICASSP paper *Combin
 
 In addition, you can access our implementation of the proposed complex-valued postfilter in the folder *source_code*.
 
-### Citation
-Please cite our work as
-
->@INPROCEEDINGS{,
->
->  title={Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation},
->  
->  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
->  
->  author={Halimeh, Mhd Modar and Haubner, Thomas and Briegleb, Annika and Schmidt, Alexander and Kellermann, Walter},
->  
->  year={2021},
->  
->  month={June},
->  
->  }
 
 ### Audio examples 
 
@@ -54,3 +38,21 @@ You can download individual audio examples by clicking on the respective downloa
  Unprocessed microphone signal | Residual signal after linear adaptive filter | Real-valued Postfilter | Complex-valued Postfilter 
  ----------------------------- | -------------------------------------------- | ---------------------- | ------------------------- 
 [<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/download-button-1136559.png" width="20%">](https://github.com/LMSAudio/Complex_PF/raw/main/examples/example5_mic.wav) | [<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/download-button-1136559.png" width="20%">](https://github.com/LMSAudio/Complex_PF/raw/main/examples/example5_linearFilter.wav) | [<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/download-button-1136559.png" width="20%">](https://github.com/LMSAudio/Complex_PF/raw/main/examples/example5_realPF.wav) | [<img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/download-button-1136559.png" width="20%">](https://github.com/LMSAudio/Complex_PF/raw/main/examples/example5_complexPF.wav) 
+
+
+### Citation
+Please cite our work as
+
+>@INPROCEEDINGS{,
+>
+>  title={Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation},
+>  
+>  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing},
+>  
+>  author={Halimeh, Mhd Modar and Haubner, Thomas and Briegleb, Annika and Schmidt, Alexander and Kellermann, Walter},
+>  
+>  year={2021},
+>  
+>  month={June},
+>  
+>  }
