@@ -19,10 +19,10 @@ We have used several files to separate the different parts of the implementation
 4. The folder [./model/] includes the classes related to the complex-valued deep postfilter model
 5. The folder [./datasets/] includes the data-related classes 
 6. The folder [./helpers/] includes utility functions, e.g., the loss function
-
 ### Citation
 Please cite our work as
 
+#### BibTex
 >@INPROCEEDINGS{,
 >
 >  title={Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation},
@@ -36,3 +36,6 @@ Please cite our work as
 >  month={June},
 >  
 >  }
+
+#### Plain Text
+> M. M. Halimeh, T. Haubner, A. Briegleb, A. Schmidt, and W. Kellermann, "Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation," 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Toronto, Canada, June, 2021.
