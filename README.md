@@ -43,6 +43,7 @@ You can download individual audio examples by clicking on the respective downloa
 ### Citation
 Please cite our work as
 
+#### BibTex
 >@INPROCEEDINGS{,
 >
 >  title={Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation},
@@ -56,3 +57,6 @@ Please cite our work as
 >  month={June},
 >  
 >  }
+
+#### Plain Text
+> M. M. Halimeh, T. Haubner, A. Briegleb, A. Schmidt, and W. Kellermann, "Combining Adaptive Filtering and Complex-valued Deep Postfiltering for Acoustic Echo Cancellation," 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Toronto, Canada, 2021.
