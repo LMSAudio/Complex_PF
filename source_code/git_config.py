@@ -1,6 +1,7 @@
 import os, torch, tqdm, scipy.io.wavfile, sys
 import numpy as np
 from datasets import dataset
+from model import complexnn
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
