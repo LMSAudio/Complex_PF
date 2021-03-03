@@ -5,7 +5,6 @@ import pytorch_lightning as pl
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from model import complexnn
 from torch.optim import Adam
 from helpers import git_utils as utils
 from model import git_complexPF as complexPF
