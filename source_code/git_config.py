@@ -1,6 +1,6 @@
 import os, torch, tqdm, scipy.io.wavfile, sys
 import numpy as np
-from dataset import dataset
+from datasets import dataset
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
