@@ -142,8 +142,8 @@ class complexPF(pl.LightningModule):
                                                             dim=1)  # ensures skip connection sizes are compatible
         xr, xi = self.decoders[-1](xr, xi)
 
-        input_real = input_real[:, 1, :, :].unsqueeze(dim=1)
-        input_imag = input_imag[:, 1, :, :].unsqueeze(dim=1)
+        input_real = input_real[:, 0, :, :].unsqueeze(dim=1)
+        input_imag = input_imag[:, 0, :, :].unsqueeze(dim=1)
 
         xr, xi = pad2d_as(xr, input_real), pad2d_as(xi, input_imag)
         mag_mask, phase_corr = self.get_ratio_mask(xr, xi)
