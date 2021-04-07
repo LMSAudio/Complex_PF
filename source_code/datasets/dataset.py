@@ -152,14 +152,14 @@ class TrainingDataset(data.Dataset): #This is written to output random segments 
         x = x / normfac
 
         farend = x[(frameInd - self.input_size+1) * self.hopSize - (
-                    self.winLength - self.hopSize):frameInd * self.hopSize + (
+                    self.winLength - self.hopSize):(frameInd+self.memoryLength) * self.hopSize + (
                 self.winLength - self.hopSize), :]
 
         residual = e[(frameInd - self.input_size+1) * self.hopSize - (
-                    self.winLength - self.hopSize):frameInd * self.hopSize + (
+                    self.winLength - self.hopSize):(frameInd+self.memoryLength) * self.hopSize + (
                 self.winLength - self.hopSize), :]
 
-        source = s[(frameInd) * self.hopSize - (self.winLength - self.hopSize):frameInd * self.hopSize, :]
+        source = s[((frameInd+self.memoryLength)) * self.hopSize - (self.winLength - self.hopSize):(frameInd+self.memoryLength) * self.hopSize, :]
 
         return farend, residual, source
 
