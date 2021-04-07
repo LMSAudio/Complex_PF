@@ -166,7 +166,7 @@ class complexPF(pl.LightningModule):
         out_audio = out_audio[:, :, -2 * self.hop_length:-self.hop_length].squeeze() # take only last two frames
 
         residual = residual.squeeze()
-        loss = utils.wSDRLoss(residual[:, -2*hop_length:-hop_length].squeeze(),
+        loss = utils.wSDRLoss(residual[:, -hop_length:].squeeze(),
                               source.squeeze(), out_audio.squeeze(), 2e-7)
 
         train_loss = loss.detach()
