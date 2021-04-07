@@ -156,8 +156,8 @@ class complexPF(pl.LightningModule):
         farend_f    = stft(farend.squeeze()).unsqueeze(dim=1)
         residual_f  = stft(residual.squeeze()).unsqueeze(dim=1)
 
-        residual_f_r, farend_f_r = residual_f[..., 0], farend_f[..., 0]
-        residual_f_i, farend_f_i = residual_f[..., 1], farend_f[..., 1]
+        residual_f_r, farend_f_r = residual_f[..., 1:-1, 0], farend_f[..., 1:-1, 0]
+        residual_f_i, farend_f_i = residual_f[..., 1:-1, 1], farend_f[..., 1:-1, 1]
 
         xr, xi          = torch.cat((residual_f_r, farend_f_r), dim=1), torch.cat((residual_f_i, farend_f_i), dim=1)
         out_r, out_i    = self(xr, xi)
@@ -166,11 +166,11 @@ class complexPF(pl.LightningModule):
         out_audio = out_audio[:, :, -2 * self.hop_length:-self.hop_length].squeeze() # take only last two frames
 
         residual = residual.squeeze()
-
-        loss = utils.wSDRLoss(residual[:, (self.nrFrames - 1) * self.hop_length:(self.nrFrames) * self.hop_length].squeeze(),
+        loss = utils.wSDRLoss(residual[:, -2*hop_length:-hop_length].squeeze(),
                               source.squeeze(), out_audio.squeeze(), 2e-7)
 
-        self.log('train_loss', loss.detach(), on_step=False, on_epoch=True, prog_bar=False)
+        train_loss = loss.detach()
+        self.log('train_loss', train_loss, on_step=False, on_epoch=True, prog_bar=False)
 
         return loss
 
