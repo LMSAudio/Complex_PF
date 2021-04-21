@@ -45,8 +45,9 @@ netcfg['GRUdim']        = 320
 netcfg['hop_length']   = hop_length
 netcfg['n_fft']         = 424
 netcfg['nrFrames']      = 2
+netcfg['memoryLength']  = 20
 
-memoryLength       = 20         # effectively, the length of the context window as provided to the GRU
+memoryLength       = netcfg['memoryLength']         # effectively, the length of the context window as provided to the GRU
 
 trainingDataset_h5pyname = 'train.hdf5'
 trainingDataset_matPath= 'trainingMatFilesPath'
