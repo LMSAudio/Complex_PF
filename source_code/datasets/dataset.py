@@ -35,7 +35,8 @@ def createDataset(directory, outFile):
         for fileName in dataList:
             data = io.loadmat(os.path.join(directory, fileName), struct_as_record=False)
             farend = data['sig'][0, 0].x[0:sigLength].astype(np.float32)
-            residual = data['sig'][0, 0].e[0:sigLength].astype(np.float32)
+            residual = data['sig'][0, 0].e[0:sigLength].astype(np.float32)# data['sig'][0, 0].s[0:sigLength].astype(np.float32)+ data['sig'][0, 0].d[0:sigLength].astype(np.float32)- data['sig'][0, 0].d_est[0:sigLength].astype(np.float32)\
+                #+ data['sig'][0, 0].n[0:sigLength].astype(np.float32)#data['sig'][0, 0].e[0:sigLength].astype(np.float32)
             source = data['sig'][0, 0].s[0:sigLength].astype(np.float32)
 
             DataSample = np.concatenate((farend, residual, source), axis=1)
@@ -81,7 +82,11 @@ class TestDataset(data.Dataset):
         x = item['farend'][()].astype(np.float32)
         normfac = abs(x).max() + 1e-6
         x = x/normfac
+
         e = item['residual'][()].astype(np.float32)
+
+        normfac = abs(e).max() + 1e-7
+        #e = e / normfac
 
         signalLength = np.floor_divide(len(x), 16000)
 
@@ -121,7 +126,7 @@ class TrainingDataset(data.Dataset): #This is written to output random segments 
         self.winLength = winLength
         self.input_size = input_size
         self.memoryLength = memoryLength
-        self.signalLength = 9
+        self.signalLength = 19
 
         self.numberFramesPerSample = np.floor_divide(self.signalLength * self.fs, self.hopSize) # number of frames per mat file
 
@@ -134,7 +139,7 @@ class TrainingDataset(data.Dataset): #This is written to output random segments 
 
         fileIdx = np.floor_divide(idx, self.numberFramesPerSample)
 
-        frameInd = np.maximum(idx - fileIdx * self.numberFramesPerSample, self.input_size+1)
+        frameInd = np.maximum(idx - (fileIdx)*self.numberFramesPerSample, self.input_size+1)
         SampleName = self.DataSamples[fileIdx]
 
         if self.dataset is None:
@@ -159,7 +164,10 @@ class TrainingDataset(data.Dataset): #This is written to output random segments 
                     self.winLength - self.hopSize):(frameInd+self.memoryLength) * self.hopSize + (
                 self.winLength - self.hopSize), :]
 
-        source = s[((frameInd+self.memoryLength)) * self.hopSize - (self.winLength - self.hopSize):(frameInd+self.memoryLength) * self.hopSize, :]
+        source = s[(frameInd - self.input_size+1) * self.hopSize - (
+                    self.winLength - self.hopSize):(frameInd+self.memoryLength) * self.hopSize + (
+                self.winLength - self.hopSize), :]
+
 
         return farend, residual, source
 
