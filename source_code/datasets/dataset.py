@@ -126,7 +126,7 @@ class TrainingDataset(data.Dataset): #This is written to output random segments 
         self.winLength = winLength
         self.input_size = input_size
         self.memoryLength = memoryLength
-        self.signalLength = 19
+        self.signalLength = 9
 
         self.numberFramesPerSample = np.floor_divide(self.signalLength * self.fs, self.hopSize) # number of frames per mat file
 
